@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:background="#FCF5B3"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/FOUT"
+            android:src="@drawable/school"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FCF5B3"
+            android:fontFamily="@font/bangers"
+            android:text="@string/crash1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FCF5B3"
+            android:fontFamily="@font/bangers"
+            android:text="@string/login_text"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="35sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/custom_edit_text_input"
+            android:drawableStart="@drawable/ic_user_label"
+            android:fontFamily="@font/bangers"
+            android:hint="@string/username_placeholder"
+            android:inputType=""
+            android:textAlignment="center"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bangers"
+            android:onClick="onLoginButton"
+            android:text="Inloggen"
+            android:textColor="@color/colorLight"
+            android:backgroundTint="#4CAF50"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bangers"
+            android:onClick="goToRegisterScreen"
+            android:text="Nog geen account?"
+            android:textColor="@color/colorLight"
+            android:backgroundTint="#F44336"
+            android:textSize="30sp"/>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+        <TextView
+            android:id="@+id/adminLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bangers"
+            android:onClick="goToAdminLoginScreen"
+            android:text="@string/login_as_admin"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+</LinearLayout>

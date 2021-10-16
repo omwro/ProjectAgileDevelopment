@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:background="@drawable/background"
+    tools:context=".AdminDashboardActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/FOUT"
+            android:src="@drawable/school" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bangers"
+            android:text="@string/crash1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bangers"
+            android:text="@string/admin_dashboard_text"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="35sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/usersOverview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="5dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:text="@string/admin_dashboard_users_text"
+                android:fontFamily="@font/bangers"
+                android:textColor="@color/colorLight"
+                android:onClick="goToUserOverview"
+                android:drawableTop="@drawable/ic_person_black_48dp"
+                android:textSize="30sp"
+                android:backgroundTint="#FFC107"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/animalsOverview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="5dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:text="@string/admin_dashboard_animals_text"
+                android:fontFamily="@font/bangers"
+                android:textColor="@color/colorLight"
+                android:drawableTop="@drawable/ic_animal_paw_print"
+                android:textSize="30sp"
+                android:onClick="goToAdminAnimalOverview"
+                android:backgroundTint="#FFC107"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/placeAnimal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="50dp"
+                android:text="@string/admin_dashboard_place_animal_text"
+                android:fontFamily="@font/bangers"
+                android:textColor="@color/colorLight"
+                android:drawableStart="@drawable/ic_map_black_48dp"
+                android:textSize="30sp"
+                android:onClick="goToMaps"
+                android:backgroundTint="#FFC107"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/admin_dashboard_logout_text"
+            android:fontFamily="@font/bangers"
+            android:textColor="@color/colorLight"
+            android:drawableStart="@drawable/ic_sign_out_red_48dp"
+            android:textSize="30sp"
+            android:onClick="logout"
+            android:backgroundTint="#FFC107"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16sp"
+    android:paddingTop="16sp"
+    android:paddingRight="16sp"
+    android:background="@drawable/profilespeler">
+
+    <!-- Gebruikersnaam -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Level nummer en Level bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/levellbl"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:textColor="@color/colorDark"
+            android:textSize="21sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="8sp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="20dp"
+            android:progressDrawable="@drawable/xpprogress" />
+    </LinearLayout>
+
+    <!-- Level tekst, XP left en XP nodig -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leveltxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LEVEL"
+            android:textColor="@color/colorDark"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xpleftlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xpslash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/colorDark"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/xpneededlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/colorDark"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+
+    <!-- Titels -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dierentxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Dieren ontdekt"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/geldtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Muntstukken"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gespeeldeurentxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Gespeeld uren"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Afbeeldingen-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/circularProgressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="75sp"
+            android:layout_height="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:max="100"
+            android:progressDrawable="@drawable/circular" />
+
+        <ImageView
+            android:id="@+id/geldimg"
+            android:layout_width="75sp"
+            android:layout_height="64sp"
+            android:adjustViewBounds="true"
+            android:contentDescription="coins"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxWidth="60dp"
+            android:src="@drawable/coins" />
+
+        <ImageView
+            android:id="@+id/klokimg"
+            android:layout_width="64sp"
+            android:layout_height="64sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="clock"
+            android:src="@drawable/clock" />
+    </LinearLayout>
+
+    <!-- Waarden -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dierenlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/geldlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/urenlbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/primary_text_dark"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16sp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="1sp"
+            android:onClick="goBack"
+            android:scaleType="center"
+            android:src="@drawable/back_icon"
+            app:fabSize="normal" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_margin="1sp"
+            android:onClick="logout"
+            android:scaleType="center"
+            android:src="@drawable/ic_sign_out_red_24dp"
+            app:fabSize="normal" />
+    </FrameLayout>
+</LinearLayout>

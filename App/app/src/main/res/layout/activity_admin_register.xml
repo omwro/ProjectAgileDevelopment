@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:background="@drawable/images"
+    tools:context=".AdminRegisterActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/FOUT"
+            android:src="@drawable/school"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bangers"
+            android:text="@string/crash1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bangers"
+            android:text="@string/register_text"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="35sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/custom_edit_text_input"
+            android:drawableStart="@drawable/ic_user_label"
+            android:fontFamily="@font/bangers"
+            android:hint="@string/username_placeholder"
+            android:inputType=""
+            android:textAlignment="center"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="3dp"
+            android:layout_weight=".28"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/genderInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="3dp"
+            android:layout_weight=".28"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/userTypeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:spinnerMode="dropdown"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/custom_edit_text_input"
+            android:drawableStart="@drawable/ic_user_label"
+            android:fontFamily="@font/bangers"
+            android:hint="email"
+            android:inputType=""
+            android:textAlignment="center"
+            android:textCursorDrawable="@drawable/plus_icon"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <Button
+            android:id="@+id/registerAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bangers"
+            android:onClick="onRegisterButton"
+            android:text="Aanmaken"
+            android:textColor="@color/colorLight"
+            android:backgroundTint="#FFC107"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- De back button met een pijl -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:onClick="goBack"
+            android:scaleType="center"
+            android:src="@drawable/back_icon"
+            app:fabSize="normal"/>
+    </FrameLayout>
+
+</LinearLayout>

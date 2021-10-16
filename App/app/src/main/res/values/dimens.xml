@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hier worden de attribuut waarden van de FAB (app:fabSize = normal) aangepast -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_fab_size_normal" tools:override="true">70dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">50dp</dimen>
+</resources>

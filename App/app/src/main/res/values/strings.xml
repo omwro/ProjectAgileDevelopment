@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Animal Crash</string>
+    <string name="loading">Loading…</string>
+    <string name="animal">ANIMAL</string>
+    <string name="crash">CRASH</string>
+    <string name="amsta">AMSTA</string>
+    <string name="level">level</string>
+    <string name="animalProfilePhoto">animal foto</string>
+    <string name="hello_world_text">Team Crash!</string>
+    <string name="ga_naar_de_splashscreen">Ga naar de SplashScreen</string>
+    <string name="ga_naar_de_loginscreen">Login</string>
+    <string name="robert_neijmeijer_omer_erdem_mehmet_tetik_liza_darwesh_milan_steman">Robert Neijmeijer, Omer Erdem, Mehmet Tetik, Liza Darwesh, Milan Steman</string>
+    <string name="crash1">Crash</string>
+    <string name="omer_erdem_robert_neijmeijer_mehmet_tetik_liza_darwesh">Omer Erdem, Robert Neijmeijer, Mehmet Tetik, Liza Darwesh</string>
+    <string name="FOUT">TODO</string>
+    <string name="profiel">Profiel</string>
+    <string name="panda">TODO</string>
+    <string name="inventory">Inventory</string>
+    <string name="description">Description</string>
+    <string name="naam">Naam</string>
+    <string name="grijsgiraf">grijsGiraf</string>
+    <string name="login_text">Inloggen</string>
+    <string name="register_text">Registreren</string>
+    <string name="username_placeholder">Gebruikersnaam</string>
+    <string name="login_as_admin">Inloggen als medewerker</string>
+    <string name="admin_login_text">Inloggen (medewerker)</string>
+    <string name="admin_dashboard_text">Dashboard</string>
+    <string name="admin_dashboard_users_text">Gebruikers</string>
+    <string name="admin_dashboard_animals_text">Dieren</string>
+    <string name="admin_dashboard_create_user_text">Aanmaken</string>
+    <string name="admin_dashboard_place_animal_text">Dier Plaatsen</string>
+    <string name="admin_dashboard_logout_text">Logout</string>
+    <string name="dier">dier</string>
+    <string name="spelers">Spelers</string>
+    <string name="text_score">TextView</string>
+    <string-array name="genders">
+        <item>Man</item>
+        <item>Vrouw</item>
+    </string-array>
+    <string-array name="user_type">
+        <item>Gebruiker</item>
+        <item>Medewerker</item>
+    </string-array>
+</resources>
